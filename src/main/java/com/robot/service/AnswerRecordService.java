@@ -20,7 +20,6 @@ public class AnswerRecordService {
         return answerRecordTemplate.getAllAnswerRecord();
     }
 
-    @Async//设置同步
     public void saveAnswerRecord(Map<String, Object> map){
         AnswerRecord answerRecord = new AnswerRecord();
         String eduCationBackground = (String)map.get("eduCationBackground");

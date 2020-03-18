@@ -12,9 +12,10 @@ public class Question {
     private String id;  //问题ID
     private String title; //问题标题
     private List<String> choices; //问题选项
-    private List<String> responseList;
+    private List<String> responseList; //回答的列表
 
     public Question(){
+        objectId = new ObjectId();
         choices = new ArrayList<>();
         responseList = new ArrayList<>();
     }
