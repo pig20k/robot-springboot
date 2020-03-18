@@ -27,6 +27,7 @@ public class QuestionTemplate {
         mongoTemplate.save(question);
     }
 
+    //返回指定问题
     public Question findQuestionById(String id){
         Query query = Query.query(Criteria.where("id").is(id));
         return mongoTemplate.findOne(query, Question.class);

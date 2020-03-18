@@ -47,7 +47,7 @@ public class QuestionController {
     }
 
     /*
-    提交答案
+    提交答案并返回分析
      */
     @ResponseBody
     @PostMapping("/commit")
