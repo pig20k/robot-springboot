@@ -12,11 +12,22 @@ public class AnswerRecord {
     private String educationBackground; //学历
     private Integer age; //年龄
     private String region; //地区
+    private String gender; //性别
     private List<Integer> choiceList; //选择的答案
+
+
 
     public AnswerRecord(){
         choiceList = new ArrayList<Integer>();
         id = new ObjectId();
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 
     public ObjectId getId() {

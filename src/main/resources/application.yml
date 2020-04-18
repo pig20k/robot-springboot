@@ -9,9 +9,9 @@ spring:
     active: a
   data:
     mongodb:
-      host: 47.100.39.201
+      host: localhost
       port: 27017
       database: robot
-      username: root
-      password: Superzhouqi/15
-      authentication-database: admin
+#      username: root
+#      password: Superzhouqi/15
+#      authentication-database: admin

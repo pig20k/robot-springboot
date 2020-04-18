@@ -25,11 +25,13 @@ public class AnswerRecordService {
         String eduCationBackground = (String)map.get("eduCationBackground");
         Integer age = (Integer)map.get("age");
         String region = (String)map.get("region");
+        String gender = (String)map.get("gender");
         List<Integer> choiceList = (ArrayList<Integer>)map.get("choiceList");
         answerRecord.setAge(age);
         answerRecord.setChoiceList(choiceList);
         answerRecord.setEducationBackground(eduCationBackground);
         answerRecord.setRegion(region);
+        answerRecord.setGender(gender);
         answerRecordTemplate.saveAnswerRecord(answerRecord);
     }
 
